@@ -99,6 +99,8 @@ export default class PasswordMask extends Component {
           name={passwordShown ? name : ''}
           tabIndex={passwordShown ? tabIndex : ''}
           className={className}
+          autocomplete="off"
+          autocapitalize="off"
           placeholder={placeholder}
           style={{
             ...inputStyles,
