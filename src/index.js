@@ -14,7 +14,7 @@ export default class PasswordMask extends Component {
     onToggle: PropTypes.func,
     inputStyles: PropTypes.object,
     buttonStyles: PropTypes.object,
-    tabIndex: PropTypes.number
+    tabIndex: PropTypes.string
   };
 
   state = {
@@ -99,8 +99,8 @@ export default class PasswordMask extends Component {
           name={passwordShown ? name : ''}
           tabIndex={passwordShown ? tabIndex : ''}
           className={className}
-          autocomplete="off"
-          autocapitalize="off"
+          autoComplete="off"
+          autoCapitalize="off"
           placeholder={placeholder}
           style={{
             ...inputStyles,
